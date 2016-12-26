@@ -1,0 +1,64 @@
+<!doctype html>
+<html>
+
+<head>
+    <title>
+        Movie Search
+    </title>
+
+    <!-- Bootstrap CSS -->
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="includes/bootstrap/css/bootstrap-glyphicons.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/jqueryass1.css" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="navbar navbar-fixed-top">
+            <div class="container">
+                <p>WELCOME TO MOVIE SEARCH</p>
+                <!-- <form name="search_form" action="#" method="post" onsubmit="searchMovie()"> -->
+                <div class="form">
+                    <input type="text" id="moviename" placeholder="Search the movie here" autofocus required/>
+                    <button class="btn" id="searchbutton"><span class="glyphicon glyphicon-search"></span> Search</button>
+                </div>
+                <!-- </form> -->
+            </div>
+            <!-- end container -->
+        </div>
+        <!-- end navbar -->
+        <div class="container" id="bodycontainer">
+            <div class="col-sm-6" id="second">
+              <img id="poster" />
+            </div>
+            <div class="col-sm-6" id="first">
+
+            </div>
+        </div>
+    </div>
+    <!-- end container -->
+
+    <!-- All Javascript at the bottom of the page for faster page loading -->
+
+    <!-- First try for the online version of jQuery-->
+    <script src="http://code.jquery.com/jquery.js"></script>
+
+    <!-- If no online access, fallback to our hardcoded version of jQuery -->
+    <script>
+        window.jQuery || document.write('<script src="includes/bootstrap/js/jquery-1.8.2.min.js"><\/script>')
+    </script>
+
+    <!-- Ajax jquery js -->
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script> -->
+
+    <!-- Bootstrap JS -->
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+
+    <!-- Custom JS -->
+    <script type="text/javascript" src="js/jqueryass1.js"></script>
+</body>
+
+</html>
